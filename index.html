@@ -13,13 +13,18 @@
         position: relative;
         height: 832px;
         background-color: #cccccc;
-        background-image: url("IMG_0465.PNG");
         background-size: 100% 100%;
-        display: flex;
+        display: block;
         width: 100%;
       }
 
-      .home-page .text-wrapper {
+      .home-page .overlap-group {
+        position: relative;
+        height: 832px;
+				background-image: url("IMG_0465.PNG");
+        background-size: 100% 100%;
+      }
+      .home-page .title {
         position: absolute;
         top: 378px;
         left: 80px;
@@ -78,11 +83,13 @@
   
   <body>
     <div class="home-page">
-      <div class="text-wrapper">Soomin Lee</div>
-      <div class="group">
-        <div class="div">Home</div>
-        <div class="text-wrapper-2">About</div>
-        <div class="text-wrapper-3">Works</div>
+      <div class="overlap-group">
+        <div class="title">Soomin Lee</div>
+        <div class="group">
+          <div class="div">Home</div>
+          <div class="text-wrapper-2">About</div>
+          <div class="text-wrapper-3">Works</div>
+        </div>
       </div>
     </div>
   </body>
