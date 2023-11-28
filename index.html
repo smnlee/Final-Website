@@ -1,202 +1,101 @@
 <!DOCTYPE html>
-<html lang="eng-ca">
+<html lang="en-ca">
   <head>
-    <title>Exercise 6</title>
+    <title>Soomin Lee Final Website</title>
     <meta charset="utc-8">
     <style>
-      #header,
-      .courses,
-      #footer,
-      #sidebar,
-      #nav,
-      .article,
-      figure,
-      figcaption {
-        display: block;
-      }
-
-      body {
-        color: #666666;
-        background-color: #f9f8f6;
-        background-image: url("https://i.imgur.com/px0ic4P.jpg");
-        background-position: center;
-        font-family: Georgia, Times, serif;
-        line-height: 1.4em;
-        margin: 0px;
-      }
-
-      .wrapper {
-        width: 940px;
-        margin: 20px auto 20px auto;
-        border: 2px solid #000000;
-        background-color: #ffffff;
-      }
-
-      #header {
-        height: 160px;
-        background-image: url("https://i.imgur.com/4rcWA3C.jpg");
-      }
-
-      h1 {
-        text-indent: -9999px;
-        width: 940px;
-        height: 130px;
-        margin: 0px;
-      }
-
-      #footer {
-        clear: both;
-        color: #ffffff;
-        background-color: #aeaca8;
-        height: 30px;
-        font-size: 80%;
-        padding: 7px 0px 0px 20px;
-      }
-
-      .courses {
-        float: left;
-        width: 659px;
-        border-right: 1px solid #eeeeee;
-      }
-
-      .article {
-        clear: both;
-        overflow: auto;
+      .home-page {
+  			background-color: #e4d7c8;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         width: 100%;
       }
 
-      .hgroup {
-        margin-top: 40px;
+      .home-page .overlap-group-wrapper {
+        background-color: #e4d7c8;
+        width: 1280px;
+        height: 832px;
       }
 
-      figure {
-        float: left;
-        width: 290px;
-        height: 220px;
-        padding: 5px;
-        margin: 20px;
-        border: 1px solid #eeeeee;
+      .home-page .overlap-group {
+        position: relative;
+        height: 832px;
+        background-image: url("img_0465.png");
+        background-size: 100% 100%;
       }
 
-      figcaption {
-        font-size: 90%;
-        text-align: left;
-      }
-
-      #sidebar {
-        width: 230px;
-        float: left;
-        padding: 0px 0px 0px 20px;
-      }
-
-      a {
-        color: #de6581;
-      }
-
-      h1,
-      h2,
-      h3 {
-        font-weight: normal;
-      }
-
-      h2 {
-        margin: 10px 0px 5px 0px;
-        padding: 0px;
-      }
-
-      h3 {
-        margin: 0px 0px 10px 0px;
-        color: #de6581;
-      }
-
-      #sidebar h2 {
-        padding: 30px 0px 10px 0px;
-        color: #de6581;
-      }
-
-      ul{
-        list-style-type: none;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-        background-color: #7A7A7A;
-      }
-      
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        color: white;
+      .home-page .text-wrapper {
+        position: absolute;
+        top: 378px;
+        left: 80px;
+        font-family: "Adorage-Regular", Helvetica;
+        font-weight: 400;
+        color: #fafafa;
+        font-size: 80px;
         text-align: center;
-        padding: 6px 25px;
-        text-decoration: none;
-        font-family: sans-serif;
-        font-size: 13;
+        letter-spacing: 0;
+        line-height: 86.6px;
+        white-space: nowrap;
       }
-      
-      li a:hover {
-        background-color: #696969;
+
+      .home-page .group {
+        position: absolute;
+        width: 1280px;
+        height: 107px;
+        top: 0;
+        left: 0;
+      }
+
+      .home-page .div {
+        position: absolute;
+        top: 34px;
+        left: 80px;
+        font-family: "Open Sans Condensed-Bold", Helvetica;
+        font-weight: 700;
+        color: #fafafa;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .home-page .text-wrapper-2 {
+        position: absolute;
+        top: 34px;
+        left: 247px;
+        font-family: "Open Sans Condensed-Bold", Helvetica;
+        font-weight: 700;
+        color: #fafafa;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .home-page .text-wrapper-3 {
+        position: absolute;
+        top: 34px;
+        left: 416px;
+        font-family: "Open Sans Condensed-Bold", Helvetica;
+        font-weight: 700;
+        color: #fafafa;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
       }
     </style>
-
   </head>
+  
   <body>
-    <div class="wrapper">
-      <div id="header">
-        <h1>Yoko's Kitchen</h1>
-        <div id="nav">
-          <ul>
-            <li><a href="" target="_blank">HOME</a></li>
-            <li><a href="" target="_blank">CLASSES</a></li>
-            <li><a href="" target="_blank">CATERING</a></li>
-            <li><a href="" target="_blank">ABOUT</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="courses">
-        <div class="article">
-          <figure>
-            <img src="https://i.imgur.com/GaC5TSH.jpg" alt="Bok Choi">
-            <figcaption>Bok Choi</figcaption>
-          </figure>
-          <div class="hgroup">
-            <h2>Japanese Vegetarian</h2>
-            <h3>Five week course in London</h3>
+    <div class="home-page">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="text-wrapper">Soomin Lee</div>
+          <div class="group">
+            <div class="div">Home</div>
+            <div class="text-wrapper-2">About</div>
+            <div class="text-wrapper-3">Works</div>
           </div>
-          <p>A five week introduction to traditional Japanese vegetarian meals, tefaching you a selection of rice and noodle dishes.</p>
         </div>
-        <div class="article">
-          <figure>
-            <img src="https://i.imgur.com/dd27k4P.jpg" alt="Teriyaki sauce">
-            <figcaption>Teriyaki Sauce</figcaption>
-          </figure>
-          <div class="hgroup">
-            <h2>Sauces Masterclass</h2>
-            <h3>One day workshop</h3>
-          </div>
-          <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
-        </div>
-      </div>
-      <div id="sidebar">
-        <div class="popular-recipes">
-          <h2>Popular Recipes</h2>
-          Yakitori (grilled chicken)
-          Tsukune (minced chicken patties)
-          Okonomiyaki (savory pancakes)
-          Mizutaki (chicken stew)
-        </div>
-        <div class="contact-details">
-          <h2>Contact</h2>
-          <p>Yoko's Kitchen<br>
-            27 Redchurch Street<br>
-            Shoreditch<br>
-            London E2 7DP</p>
-        </div>
-      </div>
-      <div id="footer">
-        &copy; 2023 Yoko's Kitchen
       </div>
     </div>
   </body>
