@@ -99,11 +99,22 @@
         margin-top: 200px;
       }
       
-      pre{
+      .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .text{
         font-family: Verdana, sans-serif;
         font-size: 20px;
-        margin-left: 20px;
-        margin-bottom: 300px;
+        margin-left: 80px;
+        margin-right: 100px;
+      }
+      
+      .image{
+        max-width: 100%;
+        max-height: 100%;
       }
       
     </style>
@@ -128,13 +139,19 @@
       <h1>
         About Me
       </h1>
-      <pre>
-        Hello! I’m Soomin and I’m studying Global 
-        Business and Digital Arts at the University of Waterloo. 
-        My skills include digital illustration, graphic design, 
-        UX/UI design, etc. I also adore playing and listening to music.
-      </pre>
-      
+      <div class="container">
+        <div class="text">
+          <p>
+            Hello! I’m Soomin and I’m studying Global<br>
+            Business and Digital Arts at the University of Waterloo.<br>
+            My skills include digital illustration, graphic design,<br>
+            UX/UI design, etc. I also adore playing and listening to music.
+					</p>
+        </div>
+        <div class="image">
+					<img src="Ellipse 1.png" alt="about me">          
+        </div>
+      </div>
     </div>
     <div id="works">
       <h1><center>Works</center></h1>
