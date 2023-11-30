@@ -2,7 +2,7 @@
 <html lang="en-ca">
   <head>
     <title>Soomin Lee Final Website</title>
-    <meta charset="utc-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       @font-face{
         font-family: Adorage;
@@ -51,6 +51,7 @@
         padding-top: 25;
         padding-bottom: 25;
         background-color: #FAFAFA;
+        width: 100%;
       }
       
       li {
@@ -66,6 +67,12 @@
         font-weight: 700;
         text-decoration: none;
         font-size: 20px;
+      }
+      
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
       }
       
       h1{
@@ -99,9 +106,9 @@
         <div class="group">
           <div id="nav">
           <ul>
-            <li><a href="#home-page" target="_self">Home</a></li>
-            <li><a href="#about" target="_self">About</a></li>
-            <li><a href="#works" target="_self">Works</a></li>
+            <li><a href="javascript:void(0)" target="_self">Home</a></li>
+            <li><a href="javascript:void(0)" target="_self">About</a></li>
+            <li><a href="javascript:void(0)" target="_self">Works</a></li>
           </ul>
         </div>
         </div>
@@ -121,5 +128,21 @@
     <div id="works">
       <h1><center>Works</center></h1>
     </div>
+    
+    <script>
+			window.onscroll = function() {myFunction()};
+
+			var nav = document.getElementById("nav");
+			var sticky = nav.offsetTop;
+
+			function myFunction() {
+  			if (window.pageYOffset >= sticky) {
+    			nav.classList.add("sticky")
+  			} else {
+   			 nav.classList.remove("sticky");
+  			}
+			}
+		</script>
+
   </body>
 </html>
