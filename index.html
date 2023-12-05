@@ -100,7 +100,7 @@
   			color: #F32495;
 			}
       
-      li a:active {
+      li a:focus {
   			color: #F32495;
 			}
       
@@ -220,8 +220,8 @@ Date retrieved: Nov. 30 2023
     <script>
 			window.onscroll = function() {myFunction()};
 
-			var nav = document.getElementById("nav");
-			var sticky = nav.offsetTop;
+			let nav = document.getElementById("nav");
+			let sticky = nav.offsetTop;
 
 			function myFunction() {
   			if (window.pageYOffset >= sticky) {
