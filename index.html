@@ -72,7 +72,7 @@
         padding-bottom: 50px;
       }
 
-      .nav {
+      ul {
         list-style-type: none;
         overflow: hidden;
         margin: 0;
@@ -81,8 +81,11 @@
         width: 100vw;
       }
       
-      .nav a {
+      li {
         float: left;
+      }
+      
+      li a {
         display: block;
 				color: #222222;
         text-align: center;
@@ -93,11 +96,11 @@
         font-size: 20px;
       }
       
-      .nav a:hover {
+      li a:hover {
   			color: #F32495;
 			}
       
-      .nav a:active {
+      li a:focus {
   			color: #F32495;
 			}
       
@@ -147,10 +150,12 @@
       <div class="overlap-group">
         <div class="title">Soomin Lee</div>
         <div class="group">
-          <div class="nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="works">Works</a>
+          <div id="nav">
+            <ul>
+              <li><a href="#home-page" target="_self">Home</a></li>
+              <li><a href="#about" target="_self">About</a></li>
+              <li><a href="#works" target="_self">Works</a></li>
+            </ul>
 					</div>
           <div class="ig">
 						<a href="https://www.instagram.com/sminnthrn/" target="_blank">
@@ -227,22 +232,5 @@ Date retrieved: Nov. 30 2023
 			}
 		</script>
 <!-- Copied code ends -->
-    
-    <script>
-      let top1 = $('#home').offset().top;
-      let top2 = $('#about').offset().top;
-      let top3 = $('#works').offset().top;
-
-      $(document).scroll(function() {
-        var scrollPos = $(document).scrollTop();
-        if (scrollPos >= top1 && scrollPos < top2) {
-          $('#change').css('background-color', '#f00');
-        } else if (scrollPos >= top2 && scrollPos < top3) {
-          $('#change').css('background-color', '#0f0');
-        } else if (scrollPos >= top3) {
-          $('#change').css('background-color', '#00f');
-        }
-      });
-    </script>
   </body>
 </html>
